@@ -1,0 +1,52 @@
+#Docker-compose.yml
+#
+version: '3'
+
+services:
+  proxy:
+    image: nginx:alpine
+    ports:
+      - '80:80'
+    networks:
+      - backend
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+  serveur1:
+    image: httpd:alpine
+    networks:
+      - backend
+    depends_on:
+      - php
+      - mariadb
+    volumes:
+      - ./serveur1/html:/usr/local/apache2/htdocs/
+  serveur2:
+    image: httpd:alpine
+    networks:
+      - backend
+    depends_on:
+      - php2
+      - mariadb
+    volumes:
+      - ./serveur2/html:/usr/local/apache2/htdocs/
+  php:
+      build: './php/'
+      networks:
+        - backend
+      volumes:
+          - ./serveur1/html:/usr/local/apache2/htdocs/
+  php2:
+      build: './php2/'
+      networks:
+        - backend
+      volumes:
+          - ./serveur2/html:/usr/local/apache2/htdocs/
+  mariadb:
+      image: mariadb
+      networks:
+        - backend
+      environment:
+          - MYSQL_ROOT_PASSWORD=rootpassword
+networks:
+    frontend:
+    backend:
