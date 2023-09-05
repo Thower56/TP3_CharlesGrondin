@@ -1,0 +1,160 @@
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:22+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:11.0.3+maria~ubu2204 started.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:22+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:22+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:11.0.3+maria~ubu2204 started.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:23+00:00 [Note] [Entrypoint]: Initializing database files
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+wwwtp3com-mariadb-1  | To do so, start the server, then issue the following command:
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | '/usr/bin/mariadb-secure-installation'
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | which will also give you the option of removing the test
+wwwtp3com-mariadb-1  | databases and anonymous user created by default.  This is
+wwwtp3com-mariadb-1  | strongly recommended for production servers.
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | See the MariaDB Knowledgebase at https://mariadb.com/kb
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | Please report any problems at https://mariadb.org/jira
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | The latest information about MariaDB is available at https://mariadb.org/.
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | Consider joining MariaDB's strong and vibrant community:
+wwwtp3com-mariadb-1  | https://mariadb.org/get-involved/
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24+00:00 [Note] [Entrypoint]: Database files initialized
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24+00:00 [Note] [Entrypoint]: Starting temporary server
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24+00:00 [Note] [Entrypoint]: Waiting for server startup
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] Starting MariaDB 11.0.3-MariaDB-1:11.0.3+maria~ubu2204 source revision 70905bcb9059dcc40db3b73bc46a36c7d40f1e10 as process 118
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Number of transaction pools: 1
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Using liburing
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Completed initialization of buffer pool
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: End of log at LSN=46141
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Opened 3 undo tablespaces
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] InnoDB: log sequence number 46141; transaction id 14
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] Plugin 'FEEDBACK' is disabled.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] Plugin 'wsrep-provider' is disabled.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Warning] 'user' entry 'root@777ffc46162e' ignored in --skip-name-resolve mode.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Warning] 'proxies_priv' entry '@% root@777ffc46162e' ignored in --skip-name-resolve mode.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:24 0 [Note] mariadbd: ready for connections.
+wwwtp3com-mariadb-1  | Version: '11.0.3-MariaDB-1:11.0.3+maria~ubu2204'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:25+00:00 [Note] [Entrypoint]: Temporary server started.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26+00:00 [Note] [Entrypoint]: Stopping temporary server
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] mariadbd (initiated by: unknown): Normal shutdown
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: FTS optimize thread exiting.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Starting shutdown...
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Buffer pool(s) dump completed at 230831 20:19:26
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Shutdown completed; log sequence number 47391; transaction id 15
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] mariadbd: Shutdown complete
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26+00:00 [Note] [Entrypoint]: Temporary server stopped
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] Starting MariaDB 11.0.3-MariaDB-1:11.0.3+maria~ubu2204 source revision 70905bcb9059dcc40db3b73bc46a36c7d40f1e10 as process 1
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Number of transaction pools: 1
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Using liburing
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Initializing buffer pool, total size = 128.000MiB, chunk size = 2.000MiB
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Completed initialization of buffer pool
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: File system buffers for log disabled (block size=4096 bytes)
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: End of log at LSN=47391
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Opened 3 undo tablespaces
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: 128 rollback segments in 3 undo tablespaces are active.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: log sequence number 47391; transaction id 14
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] Plugin 'FEEDBACK' is disabled.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] Plugin 'wsrep-provider' is disabled.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] InnoDB: Buffer pool(s) load completed at 230831 20:19:26
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] Server socket created on IP: '0.0.0.0'.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] Server socket created on IP: '::'.
+wwwtp3com-mariadb-1  | 2023-08-31 20:19:26 0 [Note] mariadbd: ready for connections.
+wwwtp3com-mariadb-1  | Version: '11.0.3-MariaDB-1:11.0.3+maria~ubu2204'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+wwwtp3com-php-1      | [31-Aug-2023 20:19:22] NOTICE: fpm is running, pid 1
+wwwtp3com-php-1      | [31-Aug-2023 20:19:22] NOTICE: ready to handle connections
+wwwtp3com-php2-1     | [31-Aug-2023 20:19:22] NOTICE: fpm is running, pid 1
+wwwtp3com-php2-1     | [31-Aug-2023 20:19:22] NOTICE: ready to handle connections
+wwwtp3com-serveur1-1  | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.176.7. Set the 'ServerName' directive globally to suppress this message
+wwwtp3com-serveur1-1  | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.176.7. Set the 'ServerName' directive globally to suppress this message
+wwwtp3com-serveur1-1  | [Thu Aug 31 20:19:22.912762 2023] [mpm_event:notice] [pid 1:tid 139935555013448] AH00489: Apache/2.4.57 (Unix) configured -- resuming normal operations
+wwwtp3com-serveur1-1  | [Thu Aug 31 20:19:22.912805 2023] [core:notice] [pid 1:tid 139935555013448] AH00094: Command line: 'httpd -D FOREGROUND'
+wwwtp3com-serveur2-1  | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.176.6. Set the 'ServerName' directive globally to suppress this message
+wwwtp3com-serveur2-1  | AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.176.6. Set the 'ServerName' directive globally to suppress this message
+wwwtp3com-serveur2-1  | [Thu Aug 31 20:19:22.748162 2023] [mpm_event:notice] [pid 1:tid 140479074081608] AH00489: Apache/2.4.57 (Unix) configured -- resuming normal operations
+wwwtp3com-serveur2-1  | [Thu Aug 31 20:19:22.748207 2023] [core:notice] [pid 1:tid 140479074081608] AH00094: Command line: 'httpd -D FOREGROUND'
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+wwwtp3com-proxy-1     | 10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+wwwtp3com-proxy-1     | /docker-entrypoint.sh: Configuration complete; ready for start up
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: using the "epoll" event method
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: nginx/1.25.2
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: built by gcc 12.2.1 20220924 (Alpine 12.2.1_git20220924-r10) 
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: OS: Linux 5.15.90.1-microsoft-standard-WSL2
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker processes
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 21
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 22
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 23
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 24
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 25
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 26
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 27
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 28
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 29
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 30
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 31
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 32
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 33
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 34
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 35
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 36
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 37
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 38
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 39
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 40
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 41
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 42
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 43
+wwwtp3com-proxy-1     | 2023/08/31 20:19:22 [notice] 1#1: start worker process 44
+wwwtp3com-proxy-1     | 192.168.176.1 - - [31/Aug/2023:20:19:25 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" "-"
+wwwtp3com-proxy-1     | 192.168.176.1 - - [31/Aug/2023:20:19:29 +0000] "GET /index.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" "-"
+wwwtp3com-proxy-1     | 2023/08/31 20:19:29 [error] 21#21: *1 open() "/usr/share/nginx/html404" failed (2: No such file or directory), client: 192.168.176.1, server: tp3.com, request: "GET /index.php HTTP/1.1", host: "www.tp3.com"
+wwwtp3com-proxy-1     | 2023/08/31 20:19:29 [error] 21#21: *1 open() "/usr/share/nginx/html404" failed (2: No such file or directory), client: 192.168.176.1, server: tp3.com, request: "GET /index.php HTTP/1.1", host: "www.tp3.com"
+wwwtp3com-proxy-1     | 192.168.176.1 - - [31/Aug/2023:20:19:29 +0000] "GET /index.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" "-"
+wwwtp3com-proxy-1     | 2023/08/31 20:23:42 [error] 23#23: *3 open() "/usr/share/nginx/html404" failed (2: No such file or directory), client: 192.168.176.1, server: tp3.com, request: "GET /index.php HTTP/1.1", host: "www.tp3.com"
+wwwtp3com-proxy-1     | 192.168.176.1 - - [31/Aug/2023:20:23:42 +0000] "GET /index.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" "-"
+wwwtp3com-proxy-1     | 2023/08/31 20:23:42 [error] 23#23: *3 open() "/usr/share/nginx/html404" failed (2: No such file or directory), client: 192.168.176.1, server: tp3.com, request: "GET /index.php HTTP/1.1", host: "www.tp3.com"
+wwwtp3com-proxy-1     | 192.168.176.1 - - [31/Aug/2023:20:23:42 +0000] "GET /index.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 OPR/100.0.0.0 (Edition std-1)" "-"

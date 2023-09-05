@@ -1,52 +1,61 @@
-#Docker-compose.yml
-#
 version: '3'
-
 services:
   proxy:
-    image: nginx:alpine
+    image: 'nginx:alpine'
     ports:
       - '80:80'
     networks:
-      - backend
+      - frontend
+    depends_on:
+      - php
+      - php2
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - './nginx/default.conf:/etc/nginx/conf.d/default.conf:ro'
   serveur1:
-    image: httpd:alpine
+    build: './serveur1/'
     networks:
-      - backend
+      - frontend
+      - backend1
     depends_on:
       - php
       - mariadb
     volumes:
-      - ./serveur1/html:/usr/local/apache2/htdocs/
+      - './serveur1/html:/srv/htdocs'
   serveur2:
-    image: httpd:alpine
+    build: './serveur2/'
     networks:
-      - backend
+      - frontend
+      - backend2
     depends_on:
       - php2
       - mariadb
     volumes:
-      - ./serveur2/html:/usr/local/apache2/htdocs/
+      - './serveur2/html:/srv/htdocs'
   php:
-      build: './php/'
-      networks:
-        - backend
-      volumes:
-          - ./serveur1/html:/usr/local/apache2/htdocs/
+    networks:
+      - backend1
+    volumes:
+      - './serveur1/html:/srv/htdocs'
+    build: './php/'
   php2:
-      build: './php2/'
-      networks:
-        - backend
-      volumes:
-          - ./serveur2/html:/usr/local/apache2/htdocs/
+    networks:
+      - backend2
+    volumes:
+      - './serveur2/html:/srv/htdocs'
+    build: './php2/'
   mariadb:
-      image: mariadb
-      networks:
-        - backend
-      environment:
-          - MYSQL_ROOT_PASSWORD=rootpassword
+    image: mariadb
+    restart: always
+    networks:
+      - backend1
+      - backend2
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+    ports:
+      - '3306:3306'
 networks:
-    frontend:
-    backend:
+  frontend:
+  backend1:
+  backend2:
+volumes:
+  dbdata:
