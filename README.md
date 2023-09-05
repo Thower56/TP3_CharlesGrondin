@@ -30,6 +30,10 @@ Dans un dossier, vous aurez des dossiers et fichiers dans cette configuration :
 ```
 nous allons maintenant passer sur chaqu'un de fichier pour preparer la configuration.
 
+## Docker-compose
+
+Dans notre Docker
+
 ## Nginx
 Dans un fichier texte, nous allons ecrire quelque ligne de configuration pour preparer nginx a devenir notre proxy.
 
@@ -88,7 +92,8 @@ location / {
         proxy_set_header   X-Forwarded-Host $server_name;
     }
 ```
-
+Ici on donne comme indication a Nginx de passer en 'upstream' les deux serveurs
+cest avec ca qui va redistribuer la charge.
 
 
 
