@@ -30,6 +30,15 @@ Dans un dossier, vous aurez des dossiers et fichiers dans cette configuration :
 ```
 nous allons maintenant passer sur chaqu'un de fichier pour preparer la configuration.
 
+## Commande
+- ```docker run -dit --name my-apache-app -p 8080:80``` pour faire une image temporaire a nos besoin
+- ```sudo docker cp container-id:/chemin/ /destination/```
+- ```docker compose up --build -d``` pour construire nos services
+- ```docker compose down --rmi local -v``` pour fermer et nettoyer nos docker
+- ```docker compose ps``` pour voir les services ouvert
+- ```docker compose logs``` voir s'il y a des problemes avec les services
+- ```docker compose logs | grep ####``` pour filtrer les services
+
 ## Docker-compose
 
 Dans notre Docker-compose nous allons creer:
@@ -213,6 +222,61 @@ COPY ./conf/httpd.conf httpd.conf
 Pour les serveurs, question de garder le controle sur question qui ce passe dans nos serveur web
 nous allons mettre a jours les serveurs web, faire un dossier pour y mettre nos page et copier notre
 configuration personnel
+
+
+## Httpd.conf
+
+Faite : ```$ docker run -dit --name my-apache-app -p 8080:80 ```
+nous allons chercher une copie de fichier de configuration
+
+Avec la commande:
+```
+sudo docker cp container-id:/etc/httpd/conf/httpd.conf .
+```
+vous allez copiez le fichier
+de configuration pour le personaliser a nos besoin
+
+nous allons modifier les lignes suivante:
+
+Modifier les Directory et mettre 
+```/srv/htdocs```
+Au lieu du chemin par defaut.
+
+- Avant les commentaires de DocumentRoot ajourter --> ProxyPassMatch "^/(.*\.php(/.*)?)$" "fcgi://php:9000/srv/htdocs/$1" (Mettre php2:9000 pour le serveur2)
+- # Enlever le commentaire devant des lignes suivantes:
+LoadModule deflate_module modules/mod_deflate.so
+LoadModule xml2enc_module modules/mod_xml2enc.so
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_fcgi_module modules/mod_proxy_fcgi.so
+- Sous <Directory "/srv/htdocs"> modifier AllowOverride
+AllowOverride All
+
+## HTML
+
+Dans le dossier html ajouter un index.php avec :
+
+```
+<html>
+	<title>Tp3 page #</title>
+	<h1>Mon site nginx numero # :3 !!</h1>
+
+	<?php 
+	$host = 'mariadb';
+	$user = 'root';
+	$pass = 'rootpassword';
+	$conn = new mysqli($host, $user, $pass);
+
+	if ($conn->connect_error) {
+		die("La connexion a échoué: " . $conn->connect_error);
+	} 
+	echo "Connexion réussie à MariaDB!";
+	?>
+
+
+</html>
+
+```
+La page va nous aider a confirmer que php et la base de donnee fonctionne
 
 
 
