@@ -52,7 +52,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=rootpassword
     volumes:
-      - DateBase:/var/lib/mysql
+      - dbdata:/var/lib/mysql
 networks:
   frontend:
   backend1:
