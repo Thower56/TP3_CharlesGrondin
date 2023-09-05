@@ -290,7 +290,8 @@ si tout est correct en vous devriez avoir deux fenetre comme ca :
 
 ![image](https://github.com/Thower56/TP3_CharlesGrondin/assets/112575794/dd556dc9-33ff-43f4-b694-00eba6243007)
 
-
+Vous pouvez tout fermer avec ```docker compose down --rmi local -v```
+verifier que tout est fermer avec ```docker compose ps```
 
 
 
