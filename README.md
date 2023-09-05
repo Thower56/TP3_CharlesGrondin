@@ -3,6 +3,7 @@
 ## Preparation
 Dans un dossier, vous aurez des dossiers et fichiers dans cette configuration :
 
+```
 Tp3
  |----- www.Tp3.com
              |-------nginx
@@ -34,7 +35,7 @@ Tp3
                                   |------- index.php
                         |------- Dockerfile             
              |-------docker-compose.yml
-
+```
 nous allons maintenant passer sur chaqu'un de fichier pour preparer la configuration.
 
 ## Nginx
