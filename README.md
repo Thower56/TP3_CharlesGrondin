@@ -39,6 +39,10 @@ nous allons maintenant passer sur chaqu'un de fichier pour preparer la configura
 - ```docker compose logs``` voir s'il y a des problemes avec les services
 - ```docker compose logs | grep ####``` pour filtrer les services
 
+## Host
+
+Bien aller ajouter www.tp3.com et tp3.com a votre fichier host
+
 ## Docker-compose
 
 Dans notre Docker-compose nous allons creer:
@@ -279,8 +283,12 @@ Dans le dossier html ajouter un index.php avec :
 La page va nous aider a confirmer que php et la base de donnee fonctionne
 
 
+## Demarrer les services
 
+Avec la commande ```docker compose up --build -d```
+si tout est correct en vous devriez avoir deux fenetre comme ca :
 
+![image](https://github.com/Thower56/TP3_CharlesGrondin/assets/112575794/dd556dc9-33ff-43f4-b694-00eba6243007)
 
 
 
